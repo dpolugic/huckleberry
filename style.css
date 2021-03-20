@@ -10,3 +10,69 @@ body {
 }
 
 /* Add styles here! */
+
+:root {
+  --primary: hsl(160deg, 100%, 30%);
+  --secondary-light: hsl(45deg, 100%, 50%);
+  --secondary-dark: hsl(45deg, 100%, 40%);
+  --black: hsl(0deg, 0%, 0%);
+  --gray-darker: hsl(0deg, 0%, 10%);
+  --gray-dark: hsl(0deg, 0%, 30%);
+  --gray-medium: hsl(0deg, 0%, 40%);
+  --gray-light: hsl(0deg, 0%, 60%);
+  --white: hsl(0deg, 0%, 100%);
+}
+
+body {
+  background-color: var(--gray-light);
+}
+
+.max-width-wrapper {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.intro-chunk {
+  max-width: 340px;
+  padding: 24px;
+}
+
+header {
+  background-color: var(--white);
+  border-bottom: 6px solid var(--gray-medium);
+}
+
+strong {
+  color: var(--primary);
+}
+
+header, main {
+  margin-bottom: 64px;
+}
+
+section {
+  background-color: var(--white);
+  padding: 8px 24px;
+  border-bottom: 6px solid var(--gray-medium);
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+.indented-heading {
+  background-color: var(--secondary-light);
+  width: -moz-fit-content;
+  width: fit-content;
+
+  margin: 0;
+  margin-left: -40px;
+  padding: 16px 40px;
+
+  border-bottom: 6px solid var(--secondary-dark);
+}
